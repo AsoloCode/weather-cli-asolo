@@ -15,6 +15,7 @@ const saveKeyValue = async (key, value) => {
         const file = await promises.readFile(filePath)
         data = JSON.parse(file)
     }
+
     data[key]= value
    await promises.writeFile(filePath, JSON.stringify(data))
 }
@@ -37,4 +38,4 @@ const isExist = async (path) => {
     }
 }
 
-export {saveKeyValue, getKeyValue, TOKEN_DICTIONARY}
+export {saveKeyValue, getKeyValue, TOKEN_DICTIONARY, filePath, isExist}
