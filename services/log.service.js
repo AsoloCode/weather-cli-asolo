@@ -26,7 +26,7 @@ const printWeather = (res, icon) => {
    ${chalk.blue('На небе:')} ${icon} ${res.weather[0].description}
    ${chalk.grey('Влажность')} ${res.main.humidity}%
    ${chalk.grey('Сегодня температура от')} ${Math.round(res.main.temp_max)} до ${Math.round(res.main.temp_min)} градусов
-   ${chalk.grey('Скорость ветра')} ${res.wind.speed}
+   ${chalk.grey('Скорость ветра')} ${res.wind.speed} м/с
  `))
 }
 
